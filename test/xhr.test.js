@@ -175,9 +175,9 @@ describe("xhrRequest", () => {
 
     it("should resolve the returned promise when xhr status 200", () => {
       fakeXhr = {onload: sandbox.spy(), status: 200, response: "dummyData"};
-      let result = xhrAPI.listen(fakeXhr);
+      let results = xhrAPI.listen(fakeXhr);
       fakeXhr.onload();
-      return result.then((result) => expect(result).toEqual("dummyData"));
+      return results.then((result) => expect(result).toEqual("dummyData"));
     });
 
     it("should reject the returned promise when xhr status 400", () => {
