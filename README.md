@@ -1,4 +1,6 @@
-# xhrRequest
+# xhrRequest [![Build Status][travis-image]][travis-url]
+[travis-image]:https://travis-ci.org/ibrahimturkmen27/xhrAPI.svg?branch=master
+[travis-url]:https://travis-ci.org/ibrahimturkmen27/xhrAPI
 An XHR library that is using proxy object and returns promise as the response of the server. 
 # Usage
 ```javascript
