@@ -1,5 +1,5 @@
 
-const xhrAPI = {
+const xhrWorker = {
 
   header: function(xhr, headerData) {
     const headers = headerData || {};
@@ -42,16 +42,16 @@ const handler = {
       };
       const options = Object.assign({}, defaultOptions, customOptions);
 
-      xhr.open(methodName, url + xhrAPI.query(options.query), true);
-      xhrAPI.header(xhr, options.header);
+      xhr.open(methodName, url + xhrWorker.query(options.query), true);
+      xhrWorker.header(xhr, options.header);
       xhr.send(options.data);
-      return xhrAPI.listen(xhr);
+      return xhrWorker.listen(xhr);
     };
   }
 };
 
 
-const xhrRequest = new Proxy({}, handler);
-module.exports = {xhrRequest, xhrAPI};
+const xhrAPI = new Proxy({}, handler);
+module.exports = {xhrAPI, xhrWorker};
 
 

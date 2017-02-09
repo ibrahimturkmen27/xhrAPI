@@ -15,7 +15,7 @@
   "devDependencies": {
     "babel-jest": "17.0.2",
     "babel-polyfill": "6.16.0",
-    "jest": "17.0.3",
+    "jest": "18.1.0",
     "sinon": "1.17.7"
   }
 }

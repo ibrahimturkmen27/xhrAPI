@@ -1,9 +1,9 @@
-# xhrRequest
+# xhrAPI
 An XHR library that is using proxy object and returns promise as the response of the server. 
 # Usage
 ```javascript
 "use strict";
-const xhrAPI = require(xhrrequest);
+const xhrAPI = require(xhrapi);
 const options = { 
                   query: "anyQuery",                  // {"key1": "value2", "key2": "value2"}
                   header: {"anyType": "anyHeader"},
