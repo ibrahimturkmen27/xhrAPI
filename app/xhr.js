@@ -12,8 +12,7 @@ const xhrWorker = {
     Object.keys(queries).forEach(query => (
       queryString += (encodeURIComponent(query) + "=" + encodeURIComponent(queryData[query]) + "&"))
     );
-    queryString = queryString.slice(0, queryString.length - 1);
-    return queryString;
+    return queryString.slice(0, queryString.length - 1);
   },
 
   listen: function(xhr) {
