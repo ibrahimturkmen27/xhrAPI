@@ -8,13 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ibrahimturkmen27/xhrRequest.git"
+    "url": "https://github.com/ibrahimturkmen27/xhrAPI.git"
   },
   "author": "trkmn27",
   "license": "ISC",
   "devDependencies": {
     "babel-jest": "17.0.2",
     "babel-polyfill": "6.16.0",
+    "babel-preset-env": "^1.1.8",
     "jest": "18.1.0",
     "sinon": "1.17.7"
   }
