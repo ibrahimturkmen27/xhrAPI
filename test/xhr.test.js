@@ -1,7 +1,7 @@
 
 
-let {xhrAPI, xhrWorker} = require("../app/xhr");
-let sinon = require("sinon");
+const {xhrAPI, xhrWorker} = require("../app/xhr");
+const sinon = require("sinon");
 
 
 describe("xhrWorker", () => {
@@ -25,9 +25,8 @@ describe("xhrWorker", () => {
     });
 
     it("should be called with correct parameters when request is sent", () => {
-      const query = {};
       const options = {
-        query
+        query: {}
       };
       sandbox.stub(xhrWorker, "query").returns("?lalala");
       xhrAPI.anyMethod("anyURL", options);
